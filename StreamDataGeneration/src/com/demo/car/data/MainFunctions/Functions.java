@@ -98,10 +98,6 @@ public class Functions {
 		return new Random().nextInt(100);
 	}
 
-	public static boolean generateBooleanData() {
-		return new Random().nextBoolean();
-	}
-
 	public static String generateRandomId() {
 		return UUID.randomUUID().toString();
 	}
@@ -109,10 +105,6 @@ public class Functions {
 	public static String generateRandomCarType() {
 		String[] vehicleTypeArray = { "Sedan","SUV","Van","Hatchback","Cabriolet","Maybach"};
 		return vehicleTypeArray[new Random().nextInt(vehicleTypeArray.length)];
-	}
-
-	public static double generateSensorData(double min, double max) {
-		return Math.random() * (max - min) + min;
 	}
 	
 	public static Map<String, String> randomLonLat(double MinLon, double MaxLon, double MinLat, double MaxLat) {
