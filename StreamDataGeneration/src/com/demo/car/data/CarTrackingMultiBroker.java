@@ -27,7 +27,7 @@ public class CarTrackingMultiBroker{
 				Map<String, String> jw = Functions.randomLonLat(12, 15, 70, 80);
 				car.setLocation(new Location(Double.parseDouble(jw.get("J")), Double.parseDouble(jw.get("W"))));
 				
-				SimpleKafkaProducer.sendDataToKafkaMultipleBroker(car.toString(), "carMultiBroker",car.getCarType()); //NOT ABLE TO CREATE A NEW BROKER
+				SimpleKafkaProducer.sendDataToKafkaMultipleBroker(car.toString(), "carMultiBroker",car.getCarType()); 
 				
 				count=count+1;
 			}
