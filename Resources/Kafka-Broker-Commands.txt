@@ -1,0 +1,43 @@
+*****START ZOOKEEPER SERVICE*****
+
+OPEN A NEW TERMINAL
+
+RUN - cd /opt/kafka
+
+RUN - sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+
+*****START KAFKA SERVICE*****
+
+
+OPEN A NEW TERMINAL
+
+RUN - cd /opt/kafka
+
+RUN - sudo bin/kafka-server-start.sh config/server.properties
+
+
+
+*****CREATE A NEW BROKER IN KAFKA*****
+
+RUN - cd /opt/kafka
+
+RUN - cp config/server.properties ~/new.txt
+
+
+---OPEN NEW.TXT FILE USING TEXT EDITOR PRESENT IN HOME DIRECTORY--- //DON'T REMOVE ANYTHING. JUST CHANGE THE BELOW VARIABLES AND REMOVE # SYMBOL PRESENT IN FRONT OF LISTENERS VARIABLE---
+
+broker.id=1
+listeners=PLAINTEXT://:9093
+log.dir=/tmp/kafka-logs-1
+
+
+RUN - cp new.txt /opt/kafka/config/server-1.properties
+
+RUN - cd /opt/kakfa
+
+RUN - sudo bin/kafka-server-start.sh config/server-1.properties
+
+
+
