@@ -4,9 +4,11 @@
 
 # Apache Kafka
 - Distributed data store optimized for ingesting and processing stream data in real time
+
 - Functions
       - Publish and Subscribe (Pub-Sub) to streams of records
       - Stores the data in order in which it was generated
+      
 - Primarily used to build real-time streaming data-pipelines (Processes and moves data from one system to another)
 - Combines two messaging models
       - Queuing : Model where each piece of data is read exactly once and if there are multiple consumer's, then only one would read that entry (Single subscriber)
