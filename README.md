@@ -1,6 +1,6 @@
 # Stream-Data-Ingestion-and-Processing-Workshop
  
- Download [StreamDataGeneration](StreamDataGeneration.zip)<br> and import the directory **StreamDataGeneration** as a new project in Eclipse to get an overview of the code.
+ Download [StreamDataGeneration](StreamDataGeneration.zip) and import the directory **StreamDataGeneration** as a new project in Eclipse to get an overview of the code.
 
 # Apache Kafka
 - Distributed data store optimized for ingesting and processing stream data in real time
