@@ -20,4 +20,8 @@
   - Consumer API : Subscribe to topics and process their streams of records
   - Streams API : Enables applications to behave as stream processors, which take in an input stream from a topic and transform into output stream which goes to different topics
   - Connector API : Automate addition of another application or data system to current Kafka Topics
- 
+- Components
+  - Kafka Broker : Server running in Kafka cluster (Cluster is made up of no. of brokers)
+  - Zookeeper : Used to manage and co-ordinate Kafka Cluster
+  - Producer
+  - Consumer
