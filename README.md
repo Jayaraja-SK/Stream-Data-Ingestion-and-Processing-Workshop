@@ -21,8 +21,8 @@
    -  Streams API : Enables applications to behave as stream processors, which take in an input stream from a topic and transform into output stream which goes to different topics
    -  Connector API : Automate addition of another application or data system to current Kafka Topics
 - Components
-  - Kafka Broker : Server running in Kafka cluster (Cluster is made up of no. of brokers)
-  - Zookeeper : Used to manage and co-ordinate Kafka Cluster
+  - Kafka Broker : Server running in Kafka cluster (Cluster is made up of no. of brokers) (Broker acts as an intermediary between Producer and Consumer)
+  - Zookeeper : Used to manage and co-ordinate Kafka Cluster (Logs of no. of brokers, topics, etc...)
   - Producer
   - Consumer
 
