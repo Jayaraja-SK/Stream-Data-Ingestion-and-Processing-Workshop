@@ -26,7 +26,7 @@
   - Producer
   - Consumer
 - Terms
-  - Replication Factor: No. of copies of partitions are maintained at different places (Multiple Brokers)
+  - Replication Factor: No. of copies of partitions maintained at different places (Multiple Brokers)
 
 # Apache Spark
 - Distributed Processing system used for big-data workloads
