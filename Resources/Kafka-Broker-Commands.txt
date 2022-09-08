@@ -35,7 +35,7 @@ log.dir=/tmp/kafka-logs-1
 
 RUN - cp new.txt /opt/kafka/config/server-1.properties
 
-RUN - cd /opt/kakfa
+RUN - cd /opt/kafka
 
 RUN - sudo bin/kafka-server-start.sh config/server-1.properties
 

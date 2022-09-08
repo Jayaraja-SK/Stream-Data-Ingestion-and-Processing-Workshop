@@ -1,0 +1,41 @@
+*****START ZOOKEEPER SERVICE*****
+
+OPEN A NEW TERMINAL
+
+cd /opt/kafka
+sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+
+*****START KAFKA SERVICE*****
+
+
+OPEN A NEW TERMINAL
+
+cd /opt/kafka
+sudo bin/kafka-server-start.sh config/server.properties
+
+
+
+*****CREATE A NEW BROKER IN KAFKA*****
+
+cd /opt/kafka
+cp config/server.properties ~/new.txt
+gedit ~/new.txt
+
+
+---DON'T REMOVE ANYTHING. JUST CHANGE THE BELOW VARIABLES AND REMOVE `#` SYMBOL IN FRONT OF LISTENERS VARIABLE---
+
+broker.id=1
+listeners=PLAINTEXT://:9093
+log.dirs=/tmp/kafka-logs-1
+
+
+# RUN THE BELOW COMMANDS
+
+cp ~/new.txt /opt/kafka/config/server-1.properties
+rm ~/new.txt
+sudo bin/kafka-server-start.sh config/server-1.properties
+
+
+
