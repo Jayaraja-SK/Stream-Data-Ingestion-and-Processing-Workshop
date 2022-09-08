@@ -2,6 +2,11 @@
  
  Download [StreamDataGeneration](StreamDataGeneration.zip) and import the directory **StreamDataGeneration** as a new project in Eclipse to get an overview of the code.
 
+# Shortcut
+- [Installation Commands](Resources/New_Requirements_Installation)
+- [Kafka-Brokers](Resources/Kafka-Broker-Commands-New)
+- [Kafka-Topics](Resources/Kafka-Topic-Commands-New)
+
 # Apache Kafka
 - Distributed data store optimized for ingesting and processing stream data in real time
 - Functions
